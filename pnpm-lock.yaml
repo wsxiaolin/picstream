@@ -17,6 +17,9 @@ importers:
       vue-router:
         specifier: ^4.3.3
         version: 4.4.5(vue@3.5.11(typescript@5.4.5))
+      vue-waterfall-plugin-next:
+        specifier: ^2.6.0
+        version: 2.6.0
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
@@ -1607,6 +1610,9 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
+  vue-waterfall-plugin-next@2.6.0:
+    resolution: {integrity: sha512-GgovHXWkEP0flI/60GPeTC9vQAnYXLfhohAe8BudIljlcpBS+UCFXOS+S7FCsoujhvdcUY1heKxZglf13KGl9g==}
+
   vue@3.5.11:
     resolution: {integrity: sha512-/8Wurrd9J3lb72FTQS7gRMNQD4nztTtKPmuDuPuhqXmmpD6+skVjAeahNpVzsuky6Sy9gy7wn8UadqPtt9SQIg==}
     peerDependencies:
@@ -3161,6 +3167,8 @@ snapshots:
       '@vue/language-core': 2.1.6(typescript@5.4.5)
       semver: 7.6.3
       typescript: 5.4.5
+
+  vue-waterfall-plugin-next@2.6.0: {}
 
   vue@3.5.11(typescript@5.4.5):
     dependencies:
