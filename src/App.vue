@@ -5,5 +5,7 @@ import { RouterView } from 'vue-router'
 <template>
   <div class="background"></div>
   <div class="overlay"></div>
-  <RouterView />
+  <div class="root">
+    <RouterView />
+  </div>
 </template>
