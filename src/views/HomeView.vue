@@ -22,9 +22,6 @@ onMounted(() => {
     name: imagePath.split('/').pop() || ''
   }))
 })
-const getFileName = (path: string) => {
-  return path.replace('./imgs/', '')
-}
 </script>
 
 <template>
