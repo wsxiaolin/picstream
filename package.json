@@ -6,7 +6,7 @@
   "scripts": {
     "getphotos": "rm -rf temp_repo public/imgs && git clone https://github.com/ClassIsland/classisland-hub temp_repo && mkdir public/imgs && cp -r temp_repo/images/* public/imgs/ && rm -rf temp_repo",
     "dev": "pnpm getphotos && node generateImageList.cjs && vite",
-    "prebuild": "pnpm getphotos && node generateImageList.cjs",
+    "prebuild": "node generateImageList.cjs",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -37,5 +37,5 @@
     "vite-plugin-vue-devtools": "^7.3.1",
     "vue-tsc": "^2.0.21"
   },
-  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
+  "packageManager": "pnpm@9.9.0"
 }
