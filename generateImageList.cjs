@@ -11,7 +11,7 @@ fs.readdir(imagesDir, (err, files) => {
   }
 
   const imageFiles = files.filter((file) => /\.(jpg|jpeg|png|gif|svg)$/.test(file))
-  const imagePaths = imageFiles.map((file) => `/imgs/${file}`)
+  const imagePaths = imageFiles.map((file) => `./imgs/${file}`)
 
   fs.writeFile(outputFilePath, JSON.stringify(imagePaths, null, 2), (err) => {
     if (err) {
