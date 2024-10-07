@@ -9,7 +9,7 @@ onMounted(() => {
 })
 
 const getFileName = (path: string) => {
-  return path.replace('/imgs/', '')
+  return path.replace('./imgs/', '')
 }
 </script>
 
