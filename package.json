@@ -6,7 +6,7 @@
   "scripts": {
     "getphotos": "rm -rf temp_repo public/imgs && git clone https://github.com/ClassIsland/classisland-hub temp_repo && mkdir public/imgs && cp -r temp_repo/images/* public/imgs/ && rm -rf temp_repo",
     "dev": "pnpm getphotos && node generateImageList.cjs && vite",
-    "prebuild": "node generateImageList.cjs",
+    "prebuild": "pnpm getphotos && node generateImageList.cjs",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
