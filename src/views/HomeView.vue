@@ -25,7 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>ClassIsland Hub</h1>
+  <h1 class="hubname">ClassIsland Hub</h1>
   <Waterfall :list="imageList" :width="320" :gutter="16">
     <template #default="{ item }">
       <div class="image-wrapper">
@@ -41,7 +41,10 @@ h1 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+}
+
+.waterfall-list {
+  background-color: #00000000 !important;
 }
 
 .image-wrapper {
