@@ -29,7 +29,7 @@ const getFileName = (path: string) => {
 
 <template>
   <h1>ClassIsland Hub</h1>
-  <Waterfall :list="imageList" :column-width="200" :gutter="16">
+  <Waterfall :list="imageList" :width="320" :gutter="16">
     <template #default="{ item }">
       <div class="image-wrapper">
         <LazyImg :url="item" alt="Image" />
