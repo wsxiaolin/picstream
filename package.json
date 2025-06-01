@@ -4,9 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "getphotos": "rm -rf temp_repo public/imgs && git clone https://github.com/ClassIsland/classisland-hub temp_repo && mkdir public/imgs && cp -r temp_repo/images/* public/imgs/ && rm -rf temp_repo",
-    "dev": "pnpm getphotos && node generateImageList.cjs && vite",
-    "prebuild": "pnpm getphotos && node generateImageList.cjs",
+    "dev": "node generateImageList.cjs && vite",
+    "prebuild": "node generateImageList.cjs",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -16,6 +15,7 @@
   },
   "dependencies": {
     "pinia": "^2.1.7",
+    "sharp": "^0.34.2",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3",
     "vue-waterfall-plugin-next": "^2.6.0"
@@ -37,6 +37,5 @@
     "vite": "^5.3.1",
     "vite-plugin-vue-devtools": "^7.3.1",
     "vue-tsc": "^2.0.21"
-  },
-  "packageManager": "pnpm@9.9.0"
+  }
 }

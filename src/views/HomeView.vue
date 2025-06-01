@@ -25,8 +25,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 class="hubname">ClassIsland Hub</h1>
-  <Waterfall :list="imageList" :width="320" :gutter="16">
+  <h1 class="hubname">PhysicsLab Hub</h1>
+  <Waterfall :list="imageList" :width="250" :gutter="16">
     <template #default="{ item }">
       <div class="image-wrapper">
         <LazyImg :url="item" alt="Image" />
